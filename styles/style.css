@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/Roboto-Regular.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -19,14 +24,50 @@ body {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-top a .fa-facebook-f, .contact-top a .fa-twitter {
+  color: #aaa;
+  width: 18px;
+  height: 18px;
+  margin-left: 20px;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contact-top a .fa-facebook-f:hover, .contact-top a .fa-twitter:hover {
+  color: #3b5998;
+}
+
+.contact-top .contact {
+  font-family: "Roboto";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 70%;
+}
+
+.contact-top .contact p {
+  margin-left: 10px;
+  color: #add97e;
+  cursor: pointer;
+}
+
+.contact-top .contact p .fa-phone, .contact-top .contact p .fa-envelope {
+  color: #aaa;
 }
 
 .banner {
   width: 100%;
-  height: 140px;
+  height: 145px;
 }
 
 .banner img {
