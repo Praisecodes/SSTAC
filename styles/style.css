@@ -168,6 +168,7 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   position: fixed;
+  z-index: 1000;
 }
 
 .hovers .about-drop {
@@ -178,11 +179,15 @@ body {
   height: 230px;
   -webkit-box-shadow: 0 2px 5px 2px #0000004b;
           box-shadow: 0 2px 5px 2px #0000004b;
+  background-color: white;
   display: none;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
 }
 
 .hovers .curriculum-drop {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 223px;
   left: 30%;
   width: 20%;
@@ -190,10 +195,14 @@ body {
   -webkit-box-shadow: 0 2px 5px 2px #0000004b;
           box-shadow: 0 2px 5px 2px #0000004b;
   display: none;
+  background-color: white;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
 }
 
 .hovers .events-drop {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 223px;
   left: 53%;
   width: 20%;
@@ -201,10 +210,14 @@ body {
   -webkit-box-shadow: 0 2px 5px 2px #0000004b;
           box-shadow: 0 2px 5px 2px #0000004b;
   display: none;
+  background-color: white;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
 }
 
 .hovers .join-drop {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 223px;
   left: 62%;
   width: 20%;
@@ -212,5 +225,58 @@ body {
   -webkit-box-shadow: 0 2px 5px 2px #0000004b;
           box-shadow: 0 2px 5px 2px #0000004b;
   display: none;
+  background-color: white;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
+}
+
+.imageslider {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.imageslider img {
+  width: 100%;
+}
+
+.fadingOut {
+  -webkit-animation: fadeOut 1s;
+          animation: fadeOut 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
