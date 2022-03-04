@@ -118,7 +118,7 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     position: fixed;
-    //z-index: 1;
+    z-index: 1000;
     .about-drop{
         position: fixed;
         top: 223px;
@@ -126,36 +126,74 @@ body{
         width: 20%;
         height: 230px;
         box-shadow: 0 2px 5px 2px #0000004b;
+        background-color: white;
         display: none;
+        animation: fadeIn .5s;
     }
 
     .curriculum-drop{
-        position: fixed;
+        position: sticky;
         top: 223px;
         left: 30%;
         width: 20%;
         height: 80px;
         box-shadow: 0 2px 5px 2px #0000004b;
         display: none;
+        background-color: white;
+        animation: fadeIn .5s;
     }
 
     .events-drop{
-        position: fixed;
+        position: sticky;
         top: 223px;
         left: 53%;
         width: 20%;
         height: 80px;
         box-shadow: 0 2px 5px 2px #0000004b;
         display: none;
+        background-color: white;
+        animation: fadeIn .5s;
     }
 
     .join-drop{
-        position: fixed;
+        position: sticky;
         top: 223px;
         left: 62%;
         width: 20%;
         height: 80px;
         box-shadow: 0 2px 5px 2px #0000004b;
         display: none;
+        background-color: white;
+        animation: fadeIn .5s;
+    }
+}
+
+.imageslider{
+    transition: .5s;
+    img{
+        width: 100%;
+        //animation: fadeIn 1s;
+    }
+}
+
+.fadingOut{
+    animation: fadeOut 1s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
     }
 }
