@@ -33,38 +33,54 @@
     <div class="header">
         <ul>
             <li><a href="#">HOME</a></li>
-            <li onmouseover="DisplayAboutBlock()" onmouseout="CloseBlock()"><a>ABOUT US <i class="fa-solid fa-angle-down"></i></a></li>
-            <li onmouseover="DisplayCuBlock()" onmouseout="CloseCuBlock()"><a>CURRICULUM <i class="fa-solid fa-angle-down"></i></a></li>
+            <li>
+                <a>ABOUT US <i class="fa-solid fa-angle-down"></i></a>
+                <div class="about-drop">
+                    <a href="#">About SSTAC</a>
+                    <a href="#">Mission And Vision</a>
+                    <a href="#">Meet Our Director</a>
+                    <a href="#">Our Facilities</a>
+                </div>
+            </li>
+            <li>
+                <a>CURRICULUM <i class="fa-solid fa-angle-down"></i></a>
+
+                <div class="curriculum-drop">
+                    <a href="#">Key Stage 3 Curriculum<br/>(JSS1-JSS3)</a>
+                </div>
+            </li>
             <li><a href="#">REGISTRATION</a></li>
-            <li onmouseover="DisplayEventsBlock()" onmouseout="CloseEventsBlock()"><a>EVENTS <i class="fa-solid fa-angle-down"></i></a></li>
-            <li onmouseover="DisplayJoinBlock()" onmouseout="CloseJoinBlock()"><a>JOIN OUR TEAM <i class="fa-solid fa-angle-down"></i></a></li>
+            <li>
+                <a>EVENTS <i class="fa-solid fa-angle-down"></i></a>
+
+                <div class="event-drop">
+                    <a href="#">Opening Ceremony</a>
+                </div>
+            </li>
+            <li>
+                <a>JOIN OUR TEAM <i class="fa-solid fa-angle-down"></i></a>
+
+                <div class="join-drop">
+                    <a href="#">Vacancies</a>
+                </div>
+            </li>
             <li><a href="#">CONTACT US</a></li>
             <li><a href="#">FAQ</a></li>
         </ul>
     </div>
 
-    <!--This here are the four hover divs for the dropdown on the header-->
-    <div class="hovers">
-    <div class="about-drop" onmouseover="DisplayAboutBlock()" onmouseout="CloseBlock()">
+    <div class="imageslider"></div>
 
-    </div>
-
-    <div class="curriculum-drop" onmouseover="DisplayCuBlock()" onmouseout="CloseCuBlock()">
-
-    </div>
-
-    <div class="events-drop" onmouseover="DisplayEventsBlock()" onmouseout="CloseEventsBlock()">
-
-    </div>
-
-    <div class="join-drop" onmouseover="DisplayJoinBlock()" onmouseout="CloseJoinBlock()">
-
-    </div>
-    </div>
-    <!--This marks the end of the drop downs-->
-
-    <div class="imageslider">
-        <img class="image" src="./images/Official Opening.jpg" alt="">
+    <div class="announce">
+        <h1>
+            REGISTRATION TO BUY LIST
+        </h1><br/>
+        <h2>
+            Click here to download the registration to buy list
+        </h2><br/><br/>
+        <button>
+            <i class="fa-solid fa-circle-arrow-down"></i> Download
+        </button>
     </div>
 
     <script src="./scripts/main.js"></script>
