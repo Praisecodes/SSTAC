@@ -110,6 +110,7 @@ body {
           justify-content: center;
   width: 100%;
   height: 50px;
+  z-index: 2;
   background-color: #add97e;
 }
 
@@ -118,11 +119,27 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   list-style-type: none;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header ul li {
   float: left;
   margin-left: 30px;
+  cursor: pointer;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header ul li a {
@@ -138,5 +155,62 @@ body {
 
 .header ul li a:hover {
   color: white;
+}
+
+.hovers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: fixed;
+}
+
+.hovers .about-drop {
+  position: fixed;
+  top: 223px;
+  left: 19.5%;
+  width: 20%;
+  height: 230px;
+  -webkit-box-shadow: 0 2px 5px 2px #0000004b;
+          box-shadow: 0 2px 5px 2px #0000004b;
+  display: none;
+}
+
+.hovers .curriculum-drop {
+  position: fixed;
+  top: 223px;
+  left: 30%;
+  width: 20%;
+  height: 80px;
+  -webkit-box-shadow: 0 2px 5px 2px #0000004b;
+          box-shadow: 0 2px 5px 2px #0000004b;
+  display: none;
+}
+
+.hovers .events-drop {
+  position: fixed;
+  top: 223px;
+  left: 53%;
+  width: 20%;
+  height: 80px;
+  -webkit-box-shadow: 0 2px 5px 2px #0000004b;
+          box-shadow: 0 2px 5px 2px #0000004b;
+  display: none;
+}
+
+.hovers .join-drop {
+  position: fixed;
+  top: 223px;
+  left: 62%;
+  width: 20%;
+  height: 80px;
+  -webkit-box-shadow: 0 2px 5px 2px #0000004b;
+          box-shadow: 0 2px 5px 2px #0000004b;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
