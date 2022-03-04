@@ -66,7 +66,7 @@ body{
 
 .banner{
     width: 100%;
-    height: 140px;
+    height: 143px;
     img{
         width: 100%;
         height: 100%;
@@ -78,7 +78,28 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 50px;
     background-color: #add97e;
+    ul{
+        width: fit-content;
+        list-style-type: none;
+        li{
+            float: left;
+            margin-left: 30px;
+            a{
+                color: black;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: "Roboto";
+                font-weight: bold;
+                transition: .5s;
+                letter-spacing: 1px;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+    }
 }
