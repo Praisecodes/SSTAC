@@ -219,6 +219,7 @@ body{
     background-position: center;
     background-size: cover;
     animation: slide 30s infinite;
+    margin-bottom: 30px;
 }
 
 .announce{
@@ -253,6 +254,55 @@ body{
         &:hover{
             box-shadow: 0 0 5px 1px #2bb673;
         }
+    }
+}
+
+.about-vid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    .video{
+        width: 560px;
+        margin-left: 10px;
+        margin-top: 10px;
+        iframe{
+            width: 100%;
+            height: 316px;
+        }
+    }
+    .about{
+        width: calc(100vw - 700px);
+        margin-left: 45px;
+        margin-top: 10px;
+        font-family: "Roboto";
+        font-size: 20px;
+        color: #333;
+        h2{
+            font-weight: bolder;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
+.footer{
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-family: "Roboto";
+    p{
+        letter-spacing: 2px;
+        font-size: 13px;
     }
 }
 
