@@ -25,6 +25,7 @@ body {
   top: 0;
   left: 0;
   display: none;
+  z-index: 1000;
 }
 
 .mobile-nav-wrap .mobile-nav {
@@ -276,6 +277,24 @@ body {
   background-color: #add97e;
 }
 
+.header button {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: lighter;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: none;
+}
+
+.header button:hover {
+  color: white;
+}
+
 .imageslider {
   background-image: url("../images/Official Opening.jpg");
   width: 100%;
@@ -386,6 +405,15 @@ body {
   font-size: 18px;
 }
 
+.about-vid .about a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  background-color: #2bb673;
+  border-radius: 4px;
+}
+
 .footer {
   background-color: #1a1a1a;
   color: white;
@@ -406,6 +434,52 @@ body {
 .footer p {
   letter-spacing: 2px;
   font-size: 13px;
+}
+
+.up {
+  position: fixed;
+  top: 91vh;
+  left: 95%;
+  width: 4%;
+  height: 8vh;
+  color: white;
+  background-color: #333333aa;
+  font-size: 20px;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: none;
+}
+
+.up:hover {
+  background-color: #333333ee;
+}
+
+.fadingOut {
+  -webkit-animation: fadeOut .5s;
+          animation: fadeOut .5s;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @-webkit-keyframes slide {
