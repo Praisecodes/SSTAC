@@ -358,6 +358,7 @@ body {
 
 .about-vid {
   width: 100%;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,8 +441,8 @@ body {
   position: fixed;
   top: 91vh;
   left: 95%;
-  width: 4%;
-  height: 8vh;
+  width: 50px;
+  height: 50px;
   color: white;
   background-color: #333333aa;
   font-size: 20px;
@@ -533,6 +534,27 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .contact-top .contact {
+    margin-left: 63%;
+  }
+}
+
+@media screen and (max-width: 1096px) {
+  .contact-top .contact {
+    margin-left: 58%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header ul {
+    display: none;
+  }
+  .header button {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
