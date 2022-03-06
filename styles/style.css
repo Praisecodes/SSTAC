@@ -79,7 +79,6 @@ body {
           flex-direction: row;
   margin-left: calc(100vw - 440px);
   width: 350px;
-  border: 1px solid black;
 }
 
 .contact-top .contact p {
