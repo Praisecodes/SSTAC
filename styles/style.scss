@@ -234,7 +234,7 @@ body{
 .imageslider{
     background-image: url("../images/Official Opening.jpg");
     width: 100%;
-    height: 500px;
+    height: 80vh;
     background-position: center;
     background-size: cover;
     animation: slide 30s infinite;
@@ -544,6 +544,48 @@ body{
         .mobile-nav{
             width: 70vw;
             margin-left: calc(100vw - 70vw);
+        }
+    }
+    .contact-top{
+        a{
+            .fa-facebook-f, .fa-twitter{
+                margin-left: 10px;
+            }
+        }
+        .contact{
+            margin-left: calc(100vw - 310px);
+        }
+    }
+}
+
+@media screen and (max-width: 444px){
+    .announce{
+        h1{
+            font-size: 30px;
+        }
+        h2{
+            font-size: 15px;
+        }
+    }
+    .about-vid{
+        .about{
+            p{
+                font-size: 12px;
+            }
+            a{
+                font-size: 9px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px){
+    .announce{
+        h1{
+            font-size: 23px;
+        }
+        h2{
+            font-size: 12px;
         }
     }
 }
