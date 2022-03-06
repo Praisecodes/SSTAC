@@ -3,6 +3,11 @@
     src: url("../assets/Roboto-Regular.ttf");
 }
 
+@font-face{
+    font-family: "Poppins";
+    src: url("../assets/Poppins-Regular.ttf");
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -31,6 +36,121 @@ body{
         height: 100%;
         background-color: white;
         margin-left: 75%;
+        transition: .5s;
+        .Top{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px;
+            font-family: "Poppins";
+            button{
+                border: 1px solid black;
+                border-radius: 50px;
+                background-color: white;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+        ul{
+            list-style-type: none;
+            font-family: "Poppins";
+            li{
+                cursor: pointer;
+                margin: 8px;
+                padding: 10px 0;
+                transition: .5s;
+                a{
+                    color: #1a1a1a;
+                    text-decoration: none;
+                    &:hover{
+                        color: #2bb673;
+                    }
+                }
+
+                &:hover{
+                    background-color: #00000022;
+                }
+
+                &:hover .about-drop, &:hover .curriculum-drop, &:hover .event-drop, &:hover .join-drop{
+                    display: block;
+                }
+
+                .about-drop{
+                    position: relative;
+                    top: 100%;
+                    left: 2%;
+                    display: none;
+                    animation: fadeIn .5s;
+                    a{
+                        display: block;
+                        margin: 5px;
+                        padding: 5px;
+                        transition: .5s;
+                        &:hover{
+                            color: white;
+                            background-color: #2bb673;
+                        }
+                    }
+                }
+
+                .curriculum-drop{
+                    position: relative;
+                    top: 100%;
+                    left: 2%;
+                    display: none;
+                    animation: fadeIn .5s;
+                    a{
+                        display: block;
+                        margin: 5px;
+                        padding: 5px;
+                        transition: .5s;
+                        &:hover{
+                            color: white;
+                            background-color: #2bb673;
+                        }
+                    }
+                }
+
+                .event-drop{
+                    position: relative;
+                    top: 100%;
+                    left: 2%;
+                    display: none;
+                    animation: fadeIn .5s;
+                    a{
+                        display: block;
+                        margin: 5px;
+                        padding: 5px;
+                        transition: .5s;
+                        &:hover{
+                            color: white;
+                            background-color: #2bb673;
+                        }
+                    }
+                }
+
+                .join-drop{
+                    position: relative;
+                    top: 100%;
+                    left: 2%;
+                    display: none;
+                    animation: fadeIn .5s;
+                    a{
+                        display: block;
+                        margin: 5px;
+                        padding: 5px;
+                        transition: .5s;
+                        &:hover{
+                            color: white;
+                            background-color: #2bb673;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -114,7 +234,7 @@ body{
                 color: black;
                 text-decoration: none;
                 font-size: 17px;
-                font-family: "Roboto";
+                font-family: "Poppins";
                 font-weight: bold;
                 transition: .5s;
                 letter-spacing: 1px;
@@ -254,6 +374,7 @@ body{
         color: #60ba36;
         font-weight: bold;
         transition: .5s;
+        font-family: "Poppins";
     }
     h2{
         color: white;
@@ -272,6 +393,7 @@ body{
         cursor: pointer;
         text-align: center;
         transition: .5s;
+        font-family: "Poppins";
         &:hover{
             box-shadow: 0 0 5px 1px #2bb673;
         }
@@ -311,6 +433,7 @@ body{
         }
         p{
             font-size: 18px;
+            font-family: "Poppins";
         }
         a{
             text-decoration: none;
@@ -319,6 +442,7 @@ body{
             padding: 12px;
             background-color: #2bb673;
             border-radius: 4px;
+            font-family: "Poppins";
         }
     }
 }
@@ -341,7 +465,7 @@ body{
 .up{
     position: fixed;
     top: calc(100vh - 60px);
-    left: calc(100vw - 60px);
+    left: calc(100vw - 80px);
     width: 50px;
     height: 50px;
     color: white;
@@ -456,6 +580,12 @@ body{
     .banner{
         height: 130px;
     }
+    .mobile-nav-wrap{
+        .mobile-nav{
+            width: 50vw;
+            margin-left: calc(100vw - 50vw);
+        }
+    }
 }
 
 @media screen and (max-width: 635px){
@@ -467,12 +597,6 @@ body{
     }
     .banner{
         height: 120px;
-    }
-    .mobile-nav-wrap{
-        .mobile-nav{
-            width: 50vw;
-            margin-left: calc(100vw - 50vw);
-        }
     }
 }
 
