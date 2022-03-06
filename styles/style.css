@@ -51,6 +51,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
+  overflow: hidden;
 }
 
 .contact-top a .fa-facebook-f, .contact-top a .fa-twitter {
@@ -76,7 +77,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 67%;
+  margin-left: calc(100vw - 440px);
+  width: 350px;
+  border: 1px solid black;
 }
 
 .contact-top .contact p {
@@ -329,12 +332,16 @@ body {
   font-size: 70px;
   color: #60ba36;
   font-weight: bold;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .announce h2 {
   color: white;
   font-size: 35px;
   font-weight: bold;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .announce button {
@@ -376,6 +383,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .about-vid .video {
@@ -439,8 +449,8 @@ body {
 
 .up {
   position: fixed;
-  top: 91vh;
-  left: 95%;
+  top: calc(100vh - 60px);
+  left: calc(100vw - 60px);
   width: 50px;
   height: 50px;
   color: white;
@@ -537,24 +547,134 @@ body {
   }
 }
 
-@media screen and (max-width: 1230px) {
-  .contact-top .contact {
-    margin-left: 63%;
-  }
-}
-
-@media screen and (max-width: 1096px) {
-  .contact-top .contact {
-    margin-left: 58%;
-  }
-}
-
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1070px) {
   .header ul {
     display: none;
   }
   .header button {
     display: block;
+    margin-left: calc(100vw - 100px);
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .about-vid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 600px;
+  }
+  .about-vid .about, .about-vid .video {
+    width: 95%;
+    margin: 10px 0 0 0;
+  }
+  .about-vid .about p {
+    font-size: 17px;
+  }
+  .about-vid .about a {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .announce {
+    font-size: 12px;
+  }
+  .announce h1 {
+    font-size: 60px;
+  }
+  .announce h2 {
+    font-size: 25px;
+  }
+  .about-vid {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .announce {
+    font-size: 12px;
+  }
+  .announce h1 {
+    font-size: 50px;
+  }
+  .banner {
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .announce {
+    font-size: 12px;
+  }
+  .announce h1 {
+    font-size: 45px;
+  }
+  .banner {
+    height: 120px;
+  }
+  .mobile-nav-wrap .mobile-nav {
+    width: 50vw;
+    margin-left: calc(100vw - 50vw);
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .announce {
+    font-size: 12px;
+  }
+  .announce h1 {
+    font-size: 40px;
+  }
+  .announce h2 {
+    font-size: 20px;
+  }
+  .banner {
+    height: 80px;
+  }
+  .header button {
+    display: block;
+    margin-left: calc(100vw - 70px);
+  }
+  .about-vid .about p {
+    font-size: 14px;
+  }
+  .about-vid .about a {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .contact-top .contact {
+    width: 260px;
+    margin-left: calc(100vw - 340px);
+  }
+  .contact-top .contact p {
+    font-size: 12px;
+  }
+  .contact-top a .fa-facebook-f, .contact-top a .fa-twitter {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media screen and (max-width: 507px) {
+  .announce {
+    font-size: 12px;
+  }
+  .announce h1 {
+    font-size: 35px;
+  }
+  .announce h2 {
+    font-size: 20px;
+  }
+  .announce button {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .mobile-nav-wrap .mobile-nav {
+    width: 70vw;
+    margin-left: calc(100vw - 70vw);
   }
 }
 /*# sourceMappingURL=style.css.map */
