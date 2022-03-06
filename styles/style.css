@@ -3,6 +3,11 @@
   src: url("../assets/Roboto-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/Poppins-Regular.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -33,6 +38,154 @@ body {
   height: 100%;
   background-color: white;
   margin-left: 75%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.mobile-nav-wrap .mobile-nav .Top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px;
+  font-family: "Poppins";
+}
+
+.mobile-nav-wrap .mobile-nav .Top button {
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mobile-nav-wrap .mobile-nav ul {
+  list-style-type: none;
+  font-family: "Poppins";
+}
+
+.mobile-nav-wrap .mobile-nav ul li {
+  cursor: pointer;
+  margin: 8px;
+  padding: 10px 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.mobile-nav-wrap .mobile-nav ul li a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.mobile-nav-wrap .mobile-nav ul li a:hover {
+  color: #2bb673;
+}
+
+.mobile-nav-wrap .mobile-nav ul li:hover {
+  background-color: #00000022;
+}
+
+.mobile-nav-wrap .mobile-nav ul li:hover .about-drop, .mobile-nav-wrap .mobile-nav ul li:hover .curriculum-drop, .mobile-nav-wrap .mobile-nav ul li:hover .event-drop, .mobile-nav-wrap .mobile-nav ul li:hover .join-drop {
+  display: block;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .about-drop {
+  position: relative;
+  top: 100%;
+  left: 2%;
+  display: none;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .about-drop a {
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .about-drop a:hover {
+  color: white;
+  background-color: #2bb673;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .curriculum-drop {
+  position: relative;
+  top: 100%;
+  left: 2%;
+  display: none;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .curriculum-drop a {
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .curriculum-drop a:hover {
+  color: white;
+  background-color: #2bb673;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .event-drop {
+  position: relative;
+  top: 100%;
+  left: 2%;
+  display: none;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .event-drop a {
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .event-drop a:hover {
+  color: white;
+  background-color: #2bb673;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .join-drop {
+  position: relative;
+  top: 100%;
+  left: 2%;
+  display: none;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .join-drop a {
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.mobile-nav-wrap .mobile-nav ul li .join-drop a:hover {
+  color: white;
+  background-color: #2bb673;
 }
 
 .contact-top {
@@ -163,7 +316,7 @@ body {
   color: black;
   text-decoration: none;
   font-size: 17px;
-  font-family: "Roboto";
+  font-family: "Poppins";
   font-weight: bold;
   -webkit-transition: .5s;
   transition: .5s;
@@ -333,6 +486,7 @@ body {
   font-weight: bold;
   -webkit-transition: .5s;
   transition: .5s;
+  font-family: "Poppins";
 }
 
 .announce h2 {
@@ -355,6 +509,7 @@ body {
   text-align: center;
   -webkit-transition: .5s;
   transition: .5s;
+  font-family: "Poppins";
 }
 
 .announce button:hover {
@@ -413,6 +568,7 @@ body {
 
 .about-vid .about p {
   font-size: 18px;
+  font-family: "Poppins";
 }
 
 .about-vid .about a {
@@ -422,6 +578,7 @@ body {
   padding: 12px;
   background-color: #2bb673;
   border-radius: 4px;
+  font-family: "Poppins";
 }
 
 .footer {
@@ -449,7 +606,7 @@ body {
 .up {
   position: fixed;
   top: calc(100vh - 60px);
-  left: calc(100vw - 60px);
+  left: calc(100vw - 80px);
   width: 50px;
   height: 50px;
   color: white;
@@ -601,6 +758,10 @@ body {
   .banner {
     height: 130px;
   }
+  .mobile-nav-wrap .mobile-nav {
+    width: 50vw;
+    margin-left: calc(100vw - 50vw);
+  }
 }
 
 @media screen and (max-width: 635px) {
@@ -612,10 +773,6 @@ body {
   }
   .banner {
     height: 120px;
-  }
-  .mobile-nav-wrap .mobile-nav {
-    width: 50vw;
-    margin-left: calc(100vw - 50vw);
   }
 }
 
