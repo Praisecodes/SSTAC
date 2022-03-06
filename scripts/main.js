@@ -17,3 +17,8 @@ document.querySelector(".mobile-btn").addEventListener('click', () => {
     document.querySelector(".mobile-nav-wrap").style.display = "block";
     document.body.style.overflow = "hidden";
 });
+
+document.querySelector(".closeNav").addEventListener('click', () => {
+    document.querySelector(".mobile-nav-wrap").style.display = "none";
+    document.body.style.overflow = "auto";
+});
