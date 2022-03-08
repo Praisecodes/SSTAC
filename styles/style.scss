@@ -644,6 +644,12 @@ body{
     .banner{
         height: 120px;
     }
+    .imagesDisplay{
+        .firstclassaccom, .IntlAffiliations, .expertsupport, .ArtFacilities{
+            width: 260px;
+            margin: 30px 4px;
+        }
+    }
 }
 
 @media screen and (max-width: 570px){
