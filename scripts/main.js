@@ -7,18 +7,18 @@ window.onscroll = () => {
     }
 }
 
-document.querySelector(".up").addEventListener('click', () => {
+const openNav = () => {
+    document.querySelector(".mobile-nav-wrap").style.display = "block";
+    document.body.style.overflow = "hidden";
+}
+
+const closeNav = () => {
+    document.querySelector(".mobile-nav-wrap").style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+const scrollUp = () => {
     document.querySelector(".contact-top").scrollIntoView({
         behavior: "smooth"
     });
-});
-
-document.querySelector(".mobile-btn").addEventListener('click', () => {
-    document.querySelector(".mobile-nav-wrap").style.display = "block";
-    document.body.style.overflow = "hidden";
-});
-
-document.querySelector(".closeNav").addEventListener('click', () => {
-    document.querySelector(".mobile-nav-wrap").style.display = "none";
-    document.body.style.overflow = "auto";
-});
+}
