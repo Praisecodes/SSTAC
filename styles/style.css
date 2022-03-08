@@ -833,6 +833,10 @@ body {
   .banner {
     height: 120px;
   }
+  .imagesDisplay .firstclassaccom, .imagesDisplay .IntlAffiliations, .imagesDisplay .expertsupport, .imagesDisplay .ArtFacilities {
+    width: 260px;
+    margin: 30px 4px;
+  }
 }
 
 @media screen and (max-width: 570px) {
