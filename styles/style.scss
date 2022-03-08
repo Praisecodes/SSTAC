@@ -354,11 +354,55 @@ body{
 .imageslider{
     background-image: url("../images/Official Opening.jpg");
     width: 100%;
-    height: 80vh;
+    height: 350px;
     background-position: center;
     background-size: cover;
     animation: slide 30s infinite;
-    margin-bottom: 30px;
+}
+
+.imagesDisplay{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    .firstclassaccom, .expertsupport, .IntlAffiliations, .ArtFacilities{
+        width: 300px;
+        height: 180px;
+        box-shadow: 0 0 3px 1px #00000034;
+        margin: 70px 15px;
+        transition: 1s;
+    }
+
+    .firstclassaccom{
+        background-image: url("../images/first-class accomodation.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .expertsupport{
+        background-image: url("../images/Expert Suppport.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .IntlAffiliations{
+        background-image: url("../images/IntlAffilations.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .ArtFacilities{
+        background-image: url("../images/ArtFacilities.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 .announce{
@@ -375,12 +419,14 @@ body{
         font-weight: bold;
         transition: .5s;
         font-family: "Poppins";
+        text-align: center;
     }
     h2{
         color: white;
         font-size: 35px;
         font-weight: bold;
         transition: .5s;
+        text-align: center;
     }
     button{
         border: 0;
@@ -464,8 +510,8 @@ body{
 
 .up{
     position: fixed;
-    top: calc(100vh - 60px);
-    left: calc(100vw - 80px);
+    top: 90%;
+    left: calc(100vw - 55px);
     width: 50px;
     height: 50px;
     color: white;
@@ -650,20 +696,6 @@ body{
 }
 
 @media screen and (max-width: 507px){
-    .announce{
-        font-size: 12px;
-        h1{
-            font-size: 35px;
-        }
-        h2{
-            font-size: 20px;
-        }
-        button{
-            width: 100px;
-            height: 40px;
-            font-size: 15px;
-        }
-    }
     .mobile-nav-wrap{
         .mobile-nav{
             width: 70vw;
@@ -699,17 +731,6 @@ body{
             a{
                 font-size: 9px;
             }
-        }
-    }
-}
-
-@media screen and (max-width: 380px){
-    .announce{
-        h1{
-            font-size: 23px;
-        }
-        h2{
-            font-size: 12px;
         }
     }
 }
