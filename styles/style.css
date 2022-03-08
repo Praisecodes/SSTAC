@@ -453,12 +453,69 @@ body {
 .imageslider {
   background-image: url("../images/Official Opening.jpg");
   width: 100%;
-  height: 80vh;
+  height: 350px;
   background-position: center;
   background-size: cover;
   -webkit-animation: slide 30s infinite;
           animation: slide 30s infinite;
-  margin-bottom: 30px;
+}
+
+.imagesDisplay {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.imagesDisplay .firstclassaccom, .imagesDisplay .expertsupport, .imagesDisplay .IntlAffiliations, .imagesDisplay .ArtFacilities {
+  width: 300px;
+  height: 180px;
+  -webkit-box-shadow: 0 0 3px 1px #00000034;
+          box-shadow: 0 0 3px 1px #00000034;
+  margin: 70px 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.imagesDisplay .firstclassaccom {
+  background-image: url("../images/first-class accomodation.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imagesDisplay .expertsupport {
+  background-image: url("../images/Expert Suppport.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imagesDisplay .IntlAffiliations {
+  background-image: url("../images/IntlAffilations.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imagesDisplay .ArtFacilities {
+  background-image: url("../images/ArtFacilities.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .announce {
@@ -487,6 +544,7 @@ body {
   -webkit-transition: .5s;
   transition: .5s;
   font-family: "Poppins";
+  text-align: center;
 }
 
 .announce h2 {
@@ -495,6 +553,7 @@ body {
   font-weight: bold;
   -webkit-transition: .5s;
   transition: .5s;
+  text-align: center;
 }
 
 .announce button {
@@ -605,8 +664,8 @@ body {
 
 .up {
   position: fixed;
-  top: calc(100vh - 60px);
-  left: calc(100vw - 80px);
+  top: 90%;
+  left: calc(100vw - 55px);
   width: 50px;
   height: 50px;
   color: white;
@@ -814,20 +873,6 @@ body {
 }
 
 @media screen and (max-width: 507px) {
-  .announce {
-    font-size: 12px;
-  }
-  .announce h1 {
-    font-size: 35px;
-  }
-  .announce h2 {
-    font-size: 20px;
-  }
-  .announce button {
-    width: 100px;
-    height: 40px;
-    font-size: 15px;
-  }
   .mobile-nav-wrap .mobile-nav {
     width: 70vw;
     margin-left: calc(100vw - 70vw);
@@ -852,15 +897,6 @@ body {
   }
   .about-vid .about a {
     font-size: 9px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .announce h1 {
-    font-size: 23px;
-  }
-  .announce h2 {
-    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
