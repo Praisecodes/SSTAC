@@ -7,14 +7,14 @@
     <title>SSTAC- Shalom Science And Technology Academy Enugu</title>
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/3a703ae51a.js" crossorigin="anonymous"></script>
-    <link href="./images/Logo3D.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="../images/Logo3D.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 </head>
 <body>
     <div class="mobile-nav-wrap">
         <div class="mobile-nav">
             <div class="Top">
                 <h2>MAIN MENU</h2>
-                <button class="closeNav"><i class="fa-solid fa-xmark"></i></button>
+                <button class="closeNav" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <ul>
                 <li><a href="">HOME</a></li>
@@ -22,7 +22,7 @@
                     <a>About Us <i class="fa-solid fa-angle-down"></i></a>
 
                     <div class="about-drop">
-                        <a href="#">About SSTAC</a>
+                        <a href="./about sstac/">About SSTAC</a>
                         <a href="#">Mission And Vision</a>
                         <a href="#">Meet Our Director</a>
                         <a href="#">Our Facilities</a>
@@ -75,7 +75,7 @@
             <li>
                 <a>ABOUT US <i class="fa-solid fa-angle-down"></i></a>
                 <div class="about-drop">
-                    <a href="#">About SSTAC</a>
+                    <a href="./about sstac">About SSTAC</a>
                     <a href="#">Mission And Vision</a>
                     <a href="#">Meet Our Director</a>
                     <a href="#">Our Facilities</a>
@@ -107,12 +107,31 @@
             <li><a href="#">FAQ</a></li>
         </ul>
 
-        <button class="mobile-btn">
+        <button class="mobile-btn" onclick="openNav()">
             <i class="fa-solid fa-bars-staggered"></i>
         </button>
     </div>
 
     <div class="imageslider"></div>
+
+    <div class="imagesDisplay">
+        <div class="firstclassaccom">
+
+        </div>
+
+        <div class="expertsupport">
+            
+        </div>
+
+        <div class="IntlAffiliations">
+
+        </div>
+
+        <div class="ArtFacilities">
+            
+        </div>
+    </div>
+
     <br/><br/>
 
     <div class="announce">
@@ -151,7 +170,7 @@
         <p>&copy; 2022 SSTAC, All Rights Reserved</p>
     </div>
 
-    <button class="up">
+    <button class="up" onclick="scrollUp()">
         <i class="fa-solid fa-angle-up"></i>
     </button>
 
