@@ -903,4 +903,86 @@ body {
     font-size: 9px;
   }
 }
+
+.firstImg {
+  width: 100%;
+  height: 370px;
+  background-color: white;
+  padding: 10px 0;
+}
+
+.firstImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-hightlights {
+  background-color: white;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.about-hightlights .aboutDiv {
+  width: 99%;
+  margin-right: 5px;
+}
+
+.about-hightlights .aboutDiv h2 {
+  color: white;
+  background-color: #40b140;
+  width: 100%;
+  font-family: "Poppins";
+  padding-left: 4px;
+  font-size: 25px;
+}
+
+.about-hightlights .aboutDiv p {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+.about-hightlights .highlightDiv {
+  width: 99%;
+  margin-right: 5px;
+}
+
+.about-hightlights .highlightDiv h2 {
+  color: white;
+  background-color: #40b140;
+  width: 100%;
+  font-family: "Poppins";
+  padding-left: 4px;
+  font-size: 25px;
+}
+
+.about-hightlights .highlightDiv p {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+.about-hightlights .highlightDiv .divOfDivs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-hightlights .highlightDiv .divOfDivs .div1, .about-hightlights .highlightDiv .divOfDivs .div2 {
+  width: 41em;
+  border: 1px solid black;
+  height: 30em;
+  margin: 10px 3px;
+}
 /*# sourceMappingURL=style.css.map */
