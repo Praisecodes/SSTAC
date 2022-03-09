@@ -982,7 +982,28 @@ body {
 .about-hightlights .highlightDiv .divOfDivs .div1, .about-hightlights .highlightDiv .divOfDivs .div2 {
   width: 41em;
   border: 1px solid black;
-  height: 30em;
   margin: 10px 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-hightlights .highlightDiv .divOfDivs .div1 .div1-1, .about-hightlights .highlightDiv .divOfDivs .div1 .div1-2, .about-hightlights .highlightDiv .divOfDivs .div1 .div1-3, .about-hightlights .highlightDiv .divOfDivs .div1 .div1-4 {
+  width: 260px;
+  height: 260px;
+  border: 1px solid black;
+  margin: 20px 10px;
 }
 /*# sourceMappingURL=style.css.map */
