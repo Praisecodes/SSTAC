@@ -92,9 +92,9 @@ body {
   color: #2bb673;
 }
 
-.mobile-nav-wrap .mobile-nav ul li:hover {
+/*.mobile-nav-wrap .mobile-nav ul li:hover {
   background-color: #00000022;
-}
+}*/
 
 .mobile-nav-wrap .mobile-nav ul li .about-drop {
   position: relative;
