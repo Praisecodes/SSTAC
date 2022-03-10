@@ -96,10 +96,6 @@ body {
   background-color: #00000022;
 }
 
-.mobile-nav-wrap .mobile-nav ul li:hover .about-drop, .mobile-nav-wrap .mobile-nav ul li:hover .curriculum-drop, .mobile-nav-wrap .mobile-nav ul li:hover .event-drop, .mobile-nav-wrap .mobile-nav ul li:hover .join-drop {
-  display: block;
-}
-
 .mobile-nav-wrap .mobile-nav ul li .about-drop {
   position: relative;
   top: 100%;
