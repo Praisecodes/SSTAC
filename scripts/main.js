@@ -25,13 +25,15 @@ const scrollUp = () => {
     });
 }
 
-const DropDown = (element) => {
+const DropDown = (element, elem) => {
     if(show == false){
         document.querySelector('.' + element).style.display = "block";
+        document.querySelector('.' + elem).style.transform = "rotate(360deg)";
         show = true;
     }
     else{
         document.querySelector('.' + element).style.display = "none";
+        document.querySelector('.' + elem).style.transform = "rotate(0deg)";
         show = false;
     }
 }
