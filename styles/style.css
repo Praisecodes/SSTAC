@@ -100,6 +100,7 @@ body {
   position: relative;
   top: 100%;
   left: 2%;
+  border-right: 2px solid #add97e;
   display: none;
   -webkit-animation: fadeIn .5s;
           animation: fadeIn .5s;
@@ -125,6 +126,7 @@ body {
   display: none;
   -webkit-animation: fadeIn .5s;
           animation: fadeIn .5s;
+  border-right: 2px solid #add97e;
 }
 
 .mobile-nav-wrap .mobile-nav ul li .curriculum-drop a {
@@ -145,6 +147,7 @@ body {
   top: 100%;
   left: 2%;
   display: none;
+  border-right: 2px solid #add97e;
   -webkit-animation: fadeIn .5s;
           animation: fadeIn .5s;
 }
@@ -166,6 +169,7 @@ body {
   position: relative;
   top: 100%;
   left: 2%;
+  border-right: 2px solid #add97e;
   display: none;
   -webkit-animation: fadeIn .5s;
           animation: fadeIn .5s;
