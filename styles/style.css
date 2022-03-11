@@ -92,6 +92,10 @@ body {
   color: #2bb673;
 }
 
+.mobile-nav-wrap .mobile-nav ul li a .fa-angle-down{
+  transition: .3s;
+}
+
 /*.mobile-nav-wrap .mobile-nav ul li:hover {
   background-color: #00000022;
 }*/
