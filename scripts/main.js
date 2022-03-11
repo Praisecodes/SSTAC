@@ -11,12 +11,18 @@ let show = false;
 
 const openNav = () => {
     document.querySelector(".mobile-nav-wrap").style.display = "block";
+    setTimeout(()=>{
+      document.querySelector('.mobile-nav').style.transform = 'translate(0)';
+    }, 5);
     document.body.style.overflow = "hidden";
 }
 
 const closeNav = () => {
-    document.querySelector(".mobile-nav-wrap").style.display = "none";
-    document.body.style.overflow = "auto";
+    document.querySelector('.mobile-nav').style.transform = 'translate(200%)';
+    setTimeout(()=>{
+      document.querySelector(".mobile-nav-wrap").style.display = "none";
+      document.body.style.overflow = "auto";
+    }, 300);
 }
 
 const scrollUp = () => {

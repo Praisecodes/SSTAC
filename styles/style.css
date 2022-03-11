@@ -30,6 +30,7 @@ body {
   top: 0;
   left: 0;
   display: none;
+  animation: fadeIn .5s;
   z-index: 1000;
 }
 
@@ -40,6 +41,7 @@ body {
   margin-left: 75%;
   -webkit-transition: .5s;
   transition: .5s;
+  transform: translate(200%);
 }
 
 .mobile-nav-wrap .mobile-nav .Top {
